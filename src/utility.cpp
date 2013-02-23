@@ -45,7 +45,7 @@ namespace ezx
     {
         bool result = false;
 
-        for (std::vector<int>::const_iterator itr = buttonIds.begin(); itr != buttonIds.end(); itr++)
+        for (std::vector<int>::const_iterator itr = comboIds.begin(); itr != comboIds.end(); itr++)
         {
             if (std::find(buttonIds.begin(), buttonIds.end(), *itr) != buttonIds.end()) {
                 result = true;
