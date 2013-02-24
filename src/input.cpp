@@ -188,7 +188,7 @@ namespace ezx
     {
         unsigned char angles[2] = EZX_TRIGGER_ANGLES(*state);
 
-        for (char i=0; i<2; i++)
+        for (char i = 0; i < 2; i++)
         {
             if (angles[i] > 0) {
                 DetectPressedAnalog(controllerID, i, angles[i], state);
@@ -211,7 +211,7 @@ namespace ezx
     {
         short angles[4] = EZX_ANALOG_STICK_ANGLES(*state);
 
-        for (char i=0; i<4; i++)
+        for (char i = 0; i < 4; i++)
         {
             char j = i+2;
 
@@ -240,7 +240,7 @@ namespace ezx
          * START, BACK, LEFT SHOULDER, RIGHT SHOULDER,
          * LEFT THUMB STICK, RIGHT THUMB STICK
          * */
-        for (char i=0; i<14; ++i)
+        for (char i = 0; i < 14; ++i)
         {
             if (state->Gamepad.wButtons & BUTTONS[i])
             {
