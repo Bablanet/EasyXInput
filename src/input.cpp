@@ -145,7 +145,7 @@ namespace ezx
         int buttonID = AnalogAngleIDToButtonID(analogAngleID);
 
         if (status::analogAngles[controllerID][analogAngleID] != angle) {
-            eventQueue.push(Event(controllerID, buttonID, angle));
+            eventQueue.push(Event(controllerID, EZX_ANALOG, buttonID, angle));
         }
 
         status::analogAngles[controllerID][analogAngleID] = angle;
