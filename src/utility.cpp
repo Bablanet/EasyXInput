@@ -108,6 +108,8 @@ namespace ezx
             case XINPUT_GAMEPAD_DPAD_DOWN: return 'd';
             case XINPUT_GAMEPAD_LEFT_SHOULDER: return 'q';
             case XINPUT_GAMEPAD_RIGHT_SHOULDER: return 'p';
+            case XINPUT_GAMEPAD_LEFT_THUMB: return '?'; //TODO: Figure out good value for this button.
+            case XINPUT_GAMEPAD_RIGHT_THUMB: return '?'; //TODO: Figure out good value for this button.
             case XINPUT_GAMEPAD_START: return 'm';
             case XINPUT_GAMEPAD_BACK: return 's';
             default: return '\0';
