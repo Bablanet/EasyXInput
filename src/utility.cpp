@@ -72,7 +72,7 @@ namespace ezx
         bool result = false;
         std::string::size_type len = strlen(combo);
 
-        for (std::string::size_type i=0; i<len; ++i)
+        for (std::string::size_type i = 0; i < len; ++i)
         {
             if (std::find(buttonIds.begin(), buttonIds.end(), CharToId(combo[i])) != buttonIds.end()) {
                 result = true;
