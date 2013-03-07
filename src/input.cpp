@@ -407,4 +407,23 @@ namespace ezx
         WORD vibration = (WORD)(65535.0f * vibrationPercentage);
         SetVibrationAmount(controllerID, vibration, vibration);
     }
+
+    /*
+     * SetVibrationLevel() returns nothing
+     *
+        * @param  The ID of the controller to be vibrated.
+        * @param  The amount to vibrate the left side by, between 0.0 and 1.0.
+        * @param  The amount to vibrate the right side by, between 0.0 and 1.0.
+     *
+     * */
+    void SetVibrationLevel(
+        short controllerID,
+        float leftVibrationPercentage,
+        float rightVibrationPercentage)
+    {
+        WORD leftVibration = (WORD)(65535.0f * leftVibrationPercentage);
+        WORD rightVibration = (WORD)(65535.0f * rightVibrationPercentage);
+
+        SetVibrationAmount(controllerID, leftVibration, rightVibration);
+    }
 }
