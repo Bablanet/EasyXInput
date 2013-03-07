@@ -28,7 +28,7 @@
 #define _EZX_INPUT_HPP_
 
 #include <windows.h>
-#include <XInput.h>
+#include <xinput.h>
 
 #include "connectionstates.hpp"
 #include "event.hpp"
