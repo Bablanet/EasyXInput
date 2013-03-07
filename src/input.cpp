@@ -358,6 +358,11 @@ namespace ezx
 
     /*
      * SetVibrationAmount() returns nothing
+     *
+        * @param  The ID of the controller to be vibrated.
+        * @param  The amount to vibrate both sides by, between 0 and 65535.
+     *
+     * */
      * */
     void SetVibrationAmount(
         short controllerID,
@@ -368,6 +373,11 @@ namespace ezx
 
     /*
      * SetVibrationAmount() returns nothing
+     *
+        * @param  The ID of the controller to be vibrated.
+        * @param  The amount to vibrate the left side by, between 0 and 65535.
+        * @param  The amount to vibrate the right side by, between 0 and 65535.
+     *
      * */
     void SetVibrationAmount(
         short controllerID,
@@ -384,7 +394,11 @@ namespace ezx
     }
 
     /*
-     * SetVibrationAmount() returns nothing
+     * SetVibrationLevel() returns nothing
+     *
+        * @param  The ID of the controller to be vibrated.
+        * @param  The amount to vibrate both sides by, between 0.0 and 1.0.
+     *
      * */
     void SetVibrationLevel(
         short controllerID,
