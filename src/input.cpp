@@ -363,7 +363,6 @@ namespace ezx
         * @param  The amount to vibrate both sides by, between 0 and 65535.
      *
      * */
-     * */
     void SetVibrationAmount(
         short controllerID,
         WORD vibration)
